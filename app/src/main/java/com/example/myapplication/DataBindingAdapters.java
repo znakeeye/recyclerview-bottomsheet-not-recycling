@@ -22,4 +22,9 @@ public class DataBindingAdapters {
         // MyView.onDraw() will get called! :(
         view.setAdapter(adapter);
     }
+
+    @BindingAdapter({"android:customText"})
+    public static void setMyViewText(MyView myView, String text) {
+        myView.setText(text);
+    }
 }

@@ -13,5 +13,7 @@ public class ItemViewHolder extends RecyclerView.ViewHolder {
     }
 
     void bind(String s) {
+        mBinding.setText(s);
+        mBinding.executePendingBindings();
     }
 }
